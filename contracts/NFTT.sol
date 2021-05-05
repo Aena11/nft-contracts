@@ -33,7 +33,7 @@ contract NFTT is ERC721Upgradeable, OwnableUpgradeable, ReentrancyGuardUpgradeab
 
     /**
      * @dev Base URI for computing {tokenURI}. Empty by default, can be overriden
-     * in child contracts.
+     * in child contractss.
      */
     function _baseURI() internal view override virtual returns (string memory) {
         return baseURI;
