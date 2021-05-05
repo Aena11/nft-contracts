@@ -107,7 +107,7 @@ contract NFTT is ERC721Upgradeable, OwnableUpgradeable, ReentrancyGuardUpgradeab
     function _setTokenMeta(uint256 _tokenId, TokenMeta memory _meta) private {
         require(_exists(_tokenId));
         require(ownerOf(_tokenId) == _msgSender());
-        _tokenMeta[_tokenId] = _meta;
+        _tokenMeta[_tokenId] = _meta; //🚚🚚
     }
 
     function tokenMeta(uint256 _tokenId) public view returns (TokenMeta memory) {
